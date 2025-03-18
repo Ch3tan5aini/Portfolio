@@ -13,7 +13,7 @@ export async function POST(request, response) {
       secure: true,
       auth: {
         user: "ch3tan5aini@gmail.com",
-        pass: "psbsiatwjvnnnorj",
+        pass: process.env.AUTH_PASS,
       },
     });
     const emailMessage = {
